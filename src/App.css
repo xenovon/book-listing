@@ -1,33 +1,75 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1b1b27;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .title {
+  margin-bottom: 40px;
+}
+.container form {
+  padding: 20px;
+  background: #ddd;
+}
+.container form div {
+  margin: 10px;
+}
+.container form .formItem {
   display: flex;
-  flex-direction: column;
+}
+.container form .formItem input, .container form .formItem select {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.container form .formItem span {
+  flex: 2;
+}
+.container form .formItem span:first-child {
+  flex: 1;
+}
+.container form button {
+  height: 40px;
+  width: 140px;
+  color: #fff;
+  background: #383838;
+  font-size: 18px;
+}
+.container .searchHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  background: #ebebeb;
+  padding: 20px;
+  align-items: center;
+}
+.container .searchHeader select {
+  width: 150px;
+  height: 30px;
+}
+.container .bookItem {
+  list-style: none;
+  display: flex;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.container .bookItem .thumbnail {
+  padding: 10px;
+  vertical-align: middle;
+  display: flex;
+  width: 60px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container .bookItem .content {
+  padding-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .bookItem .content p {
+  margin: 8px 0;
 }

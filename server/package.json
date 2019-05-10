@@ -1,0 +1,14 @@
+{
+  "name": "book-listing-server",
+  "version": "1.0.0",
+  "description": "Endpoint to get book listing based on keyword",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Adnan Hidayat",
+  "license": "MIT",
+  "dependencies": {
+    "xml2js": "latest"
+  }
+}
